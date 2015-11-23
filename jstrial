@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function factorialize(num) {
+  var arrayNum = [];
+  arrayNum.push(num);
+  newNum = num;
+   while (newNum > 0) {
+   newNum--;
+   arrayNum.push(newNum);
+}
+  fact = arrayNum.pop();
+  
+   while (newNum > 0) {
+   fact = fact*arrayNum.shift();
+   newNum--;
+  }
+  
+  num = fact;
+  return num;
+
+factorialize(5);
+
+window.alert(num);
+</script>
+
+</body>
+</html>
+}
+
+factorialize(5);
